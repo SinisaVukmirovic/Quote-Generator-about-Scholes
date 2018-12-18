@@ -1,0 +1,119 @@
+:root {
+    --manUtdRed: #ec3d46;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    color: #fff;
+}
+
+body {
+    padding-top: 20vh;
+    background: linear-gradient(150deg, #000, var(--manUtdRed));
+    height: 100vh;
+    margin-left: 7%;
+}
+
+.quote-area {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#paul {
+    width: auto;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -11;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background: var(--manUtdRed);
+    margin: 0 auto 2rem;
+    cursor: pointer;
+    border: solid 2px #fff;
+    outline: none;
+    transition: all .4s;
+}
+    .btn:hover {
+        background: #fd3d46;
+        box-shadow: 0 0 20px #fff;
+    }
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    font-size: 1.8rem;    
+    text-transform: capitalize;
+}
+    .author img {
+        width: 7rem;
+        height: 7rem;
+        background: var(--manUtdRed);
+        border-radius: 50%;
+        margin-right: 2rem;
+        border: solid 3px #fff;
+    }
+
+.quote {
+    background: linear-gradient(90deg, var(--manUtdRed), transparent);
+    padding: 1.5rem 2.5rem;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-left: solid 6px #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding-top: 10vh;
+        margin-left: 5%;
+    }
+
+    #paul {
+        width: auto;
+        height: 65vh;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -11;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        padding-top: 4vh;
+        margin-left: 5%;
+    }
+
+    #paul {
+        width: auto;
+        height: 50vh;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -11;
+    }
+}

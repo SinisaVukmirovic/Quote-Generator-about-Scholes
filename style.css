@@ -36,7 +36,7 @@ body {
 
 #paul {
     width: auto;
-    height: 80vh;
+    height: 75vh;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -64,7 +64,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 2rem 3rem 3rem;
+    margin: 3rem;
     font-size: 1.8rem;    
     text-transform: capitalize;
 }
@@ -89,18 +89,31 @@ body {
 /* Media Queries for smaller screens */
 @media screen and (max-width: 1366px) {
     #paul {
-        height: 65vh;
+        height: 70vh;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
     html {
         font-size: 14px;
     }
 
     body {
         padding-top: 10vh;
-        margin-left: 5%;
+    }
+
+    #paul {
+        height: 65vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding-top: 10vh;
     }
 
     #paul {
@@ -108,29 +121,31 @@ body {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 414px) and (max-width: 767px) {
     html {
         font-size: 12px;
     }
 
     body {
-        padding-top: 4vh;
-        margin-left: 5%;
+        padding-top: 10vh;
     }
 
     #paul {
-        height: 45vh;
+        height: 55vh;
     }
 }
 
-@media screen and (max-width: 411px) {
-    #paul {
-        height: 40vh;
-    }
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 20px) and (max-width: 413px) {
     html {
         font-size: 10px;
+    }
+
+    body {
+        padding-top: 8vh;
+        margin-left: 3%;
+    }
+
+    #paul {
+        height: 50vh;
     }
 }
